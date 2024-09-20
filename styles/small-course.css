@@ -1,0 +1,228 @@
+@media screen and (max-width: 1000px) {
+    .hamburger, .close {
+        display: block;
+    }
+}
+/* HAMBURGER ICON*/
+.hamburger, .close {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+}
+.close {
+    display: none;
+}
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    
+    #nav-links {
+        display: none;
+        flex-direction:column;
+        width: 10%;
+        text-align: center;
+        
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+
+    #nav-links li {
+        margin: 0 auto;
+    }
+
+    nav a {
+        position: relative;
+        right: 90px ;
+    }
+
+    h1 {
+        position: relative;
+        left:24%;
+        padding: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        color:#EEE2DE;
+    }
+    .profile img {
+        position: absolute;
+        left:10%;
+        bottom:78%;   
+        border-radius: 10px;
+        box-shadow: 0 0 30px black;
+    }
+    .card {
+        background-color: rgb(204, 204, 204); 
+        border-radius: 8px;
+        width: 44%; 
+        margin:0; 
+        box-shadow: 0 0 10px black; 
+        margin-block-end: auto;
+    }
+    .card h2 {
+        background-color: #153448;
+        color: rgb(204, 204, 204);
+        padding: 5px; 
+        border-radius: 10px;
+        text-align: center;
+        width: 396px; 
+    }
+
+    .card2 {
+        position: absolute;
+        background-color: rgb(204, 204, 204); 
+        margin-left:1px;
+        margin-top:200px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px black; 
+        width: 83%;  
+    }
+    h4{
+        position: absolute;
+        font-size:medium;
+        bottom:20px;
+    }
+    .card3 {
+        position: absolute;
+        background-color: rgb(204, 204, 204); 
+        border-radius: 15px;
+        width: 84%;  
+        box-shadow: 0 0 10px black; 
+        margin-top: 800px;
+        margin-left: 10px;
+        
+    }
+    .card3 h5 {
+        background-color: #153448;
+        color: rgb(204, 204, 204);
+        padding: 10px; 
+        border-radius: 10px;
+        text-align: center;
+        width: 100%; 
+        font-size:larger;
+    }
+    /* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    gap: 20px; /* Space between boxes */
+    text-align: center; /* Center text in each box */
+    
+  }
+  
+  /* Box styling */
+ .box {
+    border: 1px solid #000; /* Box border */
+    text-align: center;
+    background-color: lightgray; /* Default background color */
+
+  }
+  
+  /* Specific background colors for each row */
+  .grid-container > :nth-child(1),
+  .grid-container > :nth-child(2),
+  .grid-container > :nth-child(3) {
+    background-color: black;
+    color: white;
+    position:relative;
+    width: 84%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding:10px;
+    border-radius: 10px;
+    font-size: small;
+    
+  }
+  
+  .grid-container > :nth-child(4){
+    background-color: brown;
+    color: white;
+    position: absolute;
+    margin-top:150px;
+    width: 95%;
+    padding:10px;
+    border-radius: 10px;
+    
+  }
+  .grid-container > :nth-child(5){
+    background-color: brown;
+    color: white;
+    position: absolute;
+    margin-top:210px;
+    width: 95%;
+    padding:10px;
+    border-radius: 10px;
+    
+    
+  }
+  .grid-container > :nth-child(6) {
+    background-color: brown;
+    color: white;
+    position: absolute;
+    margin-top:270px;
+    width: 95%;
+    padding:10px;
+    border-radius: 10px;
+    
+  }
+  
+  .grid-container > :nth-child(7) {
+    background-color: lightgray; /* CSE 210 and WDD 231 */
+    width: 95%;
+    position: absolute;
+    margin-top:330px;
+    padding:10px;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+  .grid-container > :nth-child(9) {
+    background-color: lightgray; /* CSE 210 and WDD 231 */
+    width: 95%;
+    position: absolute;
+    margin-top:450px;
+    padding:10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom:20px;
+  }
+  
+  .grid-container > :nth-child(8) {
+    background-color: brown; /* WDD 131 */
+    color: white;
+    position: absolute;
+    margin-top:390px;
+    width: 95%;
+    padding:10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom:20px;
+
+}
+footer{
+    background-color: #153448;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+    color:rgb(204, 204, 204);
+    font-weight: 100;
+    font-size: 100%;
+    margin:10px;
+    margin-top: 250%;
+
+}
+#lastModified {
+    position: absolute;
+    margin-top: 50px;
+    color: #FFC55A;
+     
+}
+
+    
+   
+    }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaye J. Gualingco </title>
+    <meta name="description" content="Kaye J. Gualingco">
+    <meta name="author" content="Kaye Gualingco">
+    <link rel="stylesheet" href="styles/course.css">
+    <link rel="stylesheet" href="styles/small-course.css">
+
+    <script src="scripts/course.js" defer></script>
+
+
+</head>
+<body>
+    <header>
+        <h1> Kaye J. Gualingco</h1>
+        <div class="profile">
+            <img src="images/profile.jpg" alt="My name is Kaye Gualingco" height="110" width="95">
+        </div>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- Hamburger icon -->
+            </div>
+            <div class="close" style="display: none;">
+                &times; <!-- Close icon -->
+            </div>
+            <ul id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/kaye-gualingco-4171412ba/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Course Work</h2>
+
+        <div class="bullet-list">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        </section>
+        
+        <section class="card2">
+            <h3>Bacolod, Philippines</h3>
+            <div class="ruins">
+                <img src="images/ruins.webp" alt="Ruins" width="200">
+                <h4>Ruins</h4>
+            </div>
+        </section>
+
+        <section class="card3">
+            <h5>Web and Computer Programming Certificate</h5>
+            <div class="grid-container">
+                <div class="box">All</div>
+                <div class="box">CSE</div>
+                <div class="box">WDD</div>
+                
+                <div class="box">CSE 110</div>
+                <div class="box">WDD 130</div>
+                <div class="box">CSE 111</div>
+                
+                <div class="box">CSE 210</div>
+                <div class="box">WDD 131</div>
+                <div class="box">WDD 231</div>
+              </div>
+              
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌻 Kaye Jover Gualingco 🌻 Philippines </p>
+        <p id="lastModified"></p>
+    </footer>
+    
+    
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modification: ' + document.lastModified;
+    </script>
+</body>
+</html>
+
+
