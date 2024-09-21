@@ -19,19 +19,13 @@
         <div class="profile">
             <img src="images/profile.jpg" alt="My name is Kaye Gualingco" height="110" width="95">
         </div>
-        <nav>
-            <div class="hamburger" id="hamburger">
-                &#9776; <!-- Hamburger icon -->
-            </div>
-            <div class="close" style="display: none;">
-                &times; <!-- Close icon -->
-            </div>
-            <ul id="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Chamber</a></li>
-                <li><a href="#">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/kaye-gualingco-4171412ba/">LinkedIn</a></li>
-            </ul>
+        <button type="button" id="menu"></button>
+
+        <nav class="navigation">
+                <a href="#" title="Home" class="active">Home</a>
+                <a href="#" title="Chamber">Chamber</a>
+                <a href="#" title="GitHub Profile">GitHub Profile</a>
+                <a href="https://www.linkedin.com/in/kaye-gualingco-4171412ba/" title="LinkedIn">LinkedIn</a>
         </nav>
     </header>
     <main>
@@ -54,25 +48,23 @@
                 <h4>Ruins</h4>
             </div>
         </section>
-
+        
         <section class="card3">
             <h5>Web and Computer Programming Certificate</h5>
-            <div class="grid-container">
-                <div class="box">All</div>
-                <div class="box">CSE</div>
-                <div class="box">WDD</div>
-                
-                <div class="box">CSE 110</div>
-                <div class="box">WDD 130</div>
-                <div class="box">CSE 111</div>
-                
-                <div class="box">CSE 210</div>
-                <div class="box">WDD 131</div>
-                <div class="box">WDD 231</div>
-              </div>
-              
+            <div class="filters-button">
+                <button id="show-all">All </button>
+                <button id="show-cse">CSE </button>
+                <button id="show-wdd">WDD </button>
+            </div>
+        
+            <!-- Courses will be dynamically inserted here -->
+            <div id="course-list"></div>
+        
+            <!-- Total Credits -->
+            <div id="total-credits"></div>
         </section>
     </main>
+    
     <footer>
         <p>&copy; <span id="currentyear"></span> 🌻 Kaye Jover Gualingco 🌻 Philippines </p>
         <p id="lastModified"></p>

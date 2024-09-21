@@ -1,46 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 @media screen and (max-width: 1000px) {
     .hamburger, .close {
         display: block;
     }
-}
-/* HAMBURGER ICON*/
-.hamburger, .close {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-    right: 5px;
-    top: 20px;
-}
-.close {
-    display: none;
-}
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
+    #menu {
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+        background: none;
+        border: none;
+        color: black;
+    }
+    #menu {
+        position: absolute; 
+        left: 80%; 
+        top: -80px;
+    }
+    #menu::before {
+        content: "☰";
     }
     
-    #nav-links {
+    #menu.open::before {
+        content: "✖";
+    }
+    .navigation {
         display: none;
-        flex-direction:column;
-        width: 10%;
+        flex-direction: column;
+        list-style: none;
+        background-color: #333;
+        color: #fff;
+    }
+    
+    .navigation a {
+        padding: 1rem;
         text-align: center;
-        
+        text-decoration: none;
+        color: #fff;
     }
-
-    #nav-links.active {
-        display: flex;
+    .navigation a:hover {
+        background-color: #bbb;
+        color: #333;
+        font-weight: 700;
     }
-
-    #nav-links li {
-        margin: 0 auto;
+    @media (max-width: 768px) {
+        .navigation {
+            display: none;
+        }
+    
+        #menu.open + .navigation {
+            display: flex;
+        }
     }
-
-    nav a {
-        position: relative;
-        right: 90px ;
-    }
-
     h1 {
         position: relative;
         left:24%;
@@ -105,103 +121,21 @@
         width: 100%; 
         font-size:larger;
     }
-    /* Grid container */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
-    gap: 20px; /* Space between boxes */
-    text-align: center; /* Center text in each box */
-    
-  }
   
-  /* Box styling */
- .box {
-    border: 1px solid #000; /* Box border */
-    text-align: center;
-    background-color: lightgray; /* Default background color */
-
-  }
-  
-  /* Specific background colors for each row */
-  .grid-container > :nth-child(1),
-  .grid-container > :nth-child(2),
-  .grid-container > :nth-child(3) {
-    background-color: black;
-    color: white;
-    position:relative;
-    width: 84%;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    padding:10px;
-    border-radius: 10px;
-    font-size: small;
+    .filters-buttons {
+        display: flex;
+        border-radius: 10px;
+        color:white;
     
-  }
-  
-  .grid-container > :nth-child(4){
-    background-color: brown;
-    color: white;
-    position: absolute;
-    margin-top:150px;
-    width: 95%;
-    padding:10px;
-    border-radius: 10px;
+    }
+    button {
+       font-size: small;
+       cursor: pointer;
+       margin:10px;
+       margin-top: 80px;
+       margin-left: 15px;
+    }
     
-  }
-  .grid-container > :nth-child(5){
-    background-color: brown;
-    color: white;
-    position: absolute;
-    margin-top:210px;
-    width: 95%;
-    padding:10px;
-    border-radius: 10px;
-    
-    
-  }
-  .grid-container > :nth-child(6) {
-    background-color: brown;
-    color: white;
-    position: absolute;
-    margin-top:270px;
-    width: 95%;
-    padding:10px;
-    border-radius: 10px;
-    
-  }
-  
-  .grid-container > :nth-child(7) {
-    background-color: lightgray; /* CSE 210 and WDD 231 */
-    width: 95%;
-    position: absolute;
-    margin-top:330px;
-    padding:10px;
-    border-radius: 10px;
-    margin-left: 20px;
-  }
-  .grid-container > :nth-child(9) {
-    background-color: lightgray; /* CSE 210 and WDD 231 */
-    width: 95%;
-    position: absolute;
-    margin-top:450px;
-    padding:10px;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-bottom:20px;
-  }
-  
-  .grid-container > :nth-child(8) {
-    background-color: brown; /* WDD 131 */
-    color: white;
-    position: absolute;
-    margin-top:390px;
-    width: 95%;
-    padding:10px;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-bottom:20px;
-
-}
 footer{
     background-color: #153448;
     display: flex;
@@ -213,7 +147,7 @@ footer{
     font-weight: 100;
     font-size: 100%;
     margin:10px;
-    margin-top: 250%;
+    margin-top: 330%;
 
 }
 #lastModified {

@@ -16,101 +16,70 @@ if (lastModifiedElement) {
 }
 
 // Hamburger Icon
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.getElementById('hamburger');
-    const closeBtn = document.querySelector('.close');
-    const navLinks = document.getElementById('nav-links');
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
 
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.add('active');
-        hamburger.style.display = 'none';
-        closeBtn.style.display = 'block';
-    });
-
-    closeBtn.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        closeBtn.style.display = 'none';
-        hamburger.style.display = 'block';
-    });
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
 });
 
+// The courses array
 const courses = [
-    {
-        subject: 'CSE',
-        number: 110,
-        title: 'Introduction to Programming',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'This course will introduce students to programming. It will introduce the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems.',
-        technology: [
-            'Python'
-        ],
-        completed: false
-    },
-    {
-        subject: 'WDD',
-        number: 130,
-        title: 'Web Fundamentals',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming. It is anticipated that students who complete this course will understand the fields of web design and development and will have a good idea if they want to pursue this degree as a major.',
-        technology: [
-            'HTML',
-            'CSS'
-        ],
-        completed: true
-    },
-    {
-        subject: 'CSE',
-        number: 111,
-        title: 'Programming with Functions',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
-        technology: [
-            'Python'
-        ],
-        completed: true
-    },
-    {
-        subject: 'CSE',
-        number: 210,
-        title: 'Programming with Classes',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.',
-        technology: [
-            'C#'
-        ],
-        completed: false
-    },
-    {
-        subject: 'WDD',
-        number: 131,
-        title: 'Dynamic Web Fundamentals',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'This course builds on prior experience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.',
-        technology: [
-            'HTML',
-            'CSS',
-            'JavaScript'
-        ],
-        completed: true
-    },
-    {
-        subject: 'WDD',
-        number: 231,
-        title: 'Frontend Web Development I',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage.',
-        technology: [
-            'HTML',
-            'CSS',
-            'JavaScript'
-        ],
-        completed: true
-    }
-]
+    { subject: 'CSE 110', completed: false },  
+    { subject: 'WDD 130', completed: true },  
+    { subject: 'CSE 111', completed: true },  
+    { subject: 'CSE 210', completed: false },  
+    { subject: 'WDD 131', completed: true },  
+    { subject: 'WDD 231', completed: true }  
+];
 
+// Function to display courses
+function displayCourses(filter = 'all') {
+    const courseList = document.getElementById('course-list');
+    courseList.innerHTML = ''; // Clear the current list
+
+    // Filter courses based on the selected filter (all, CSE, or WDD)
+    const filteredCourses = courses.filter(course => {
+        if (filter === 'all') return true;
+        return course.subject.startsWith(filter); // Adjusted to match by subject prefix
+    });
+
+    // Dynamically create course cards and display them
+    filteredCourses.forEach(course => {
+        const courseCard = document.createElement('div');
+        courseCard.classList.add('course-card');
+
+        // Apply background color based on completion status
+        if (course.completed) {
+            courseCard.style.backgroundColor = 'brown';
+        } else {
+            courseCard.style.backgroundColor = 'gray';
+        }
+
+        // Display course subject
+        courseCard.innerHTML = `
+            <h3>${course.subject}</h3>`;
+
+        // Append the course card to the course list
+        courseList.appendChild(courseCard);
+    });
+
+    // Call function to update total credits (optional)
+    displayTotalCredits();
+}
+
+// Function to display total credits
+function displayTotalCredits() {
+    const totalCredits = courses.reduce((total, course) => total + 2, 0); // Assuming each course is 2 credits
+    document.getElementById('total-credits').textContent = `Total Credits: ${totalCredits}`;
+}
+
+// Event listeners for filtering
+document.getElementById('show-all').addEventListener('click', () => displayCourses('all'));
+document.getElementById('show-cse').addEventListener('click', () => displayCourses('CSE'));
+document.getElementById('show-wdd').addEventListener('click', () => displayCourses('WDD'));
+
+
+// Initial display of all courses
+displayCourses();
