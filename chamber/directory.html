@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Project </title>
+    <meta name="description" content="The Chamber of Commerce Site Plan">
+    <meta name="author" content=" Kaye Gualingco ">
+
+     <!-- Open Graph meta tags for Facebook -->
+     <meta property="og:title" content="Timbuktu Chamber of Commerce">
+     <meta property="og:type" content="website">
+     <meta property="og:image" content="images/social-image.png">
+     <meta property="og:url" content="https://yourwebsite.com">
+     <meta property="og:description" content="Welcome to Timbuktu Chamber of Commerce, promoting local businesses and commerce.">
+    
+     <link rel="stylesheet" href="styles/small-directory.css">
+    <link rel="stylesheet" href="styles/large-directory.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Timbuktu</h1>
+        <div class="placeholder">
+            <img src="images/placeholder.png" alt="Logo" height="110" width="95">
+            <span>Chamber of Commerce</span>
+            <span class="symbol">◐</span>
+        </div>
+    </header>
+        <nav>
+            <button id="myButton"></button>
+            <ul class="menuLinks">
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="#" title="Directory">Directory</a></li>
+                <li><a href="#" title="Join">Join</a></li>
+                <li><a href="#" title="Discover">Discover</a></li>
+            </ul>
+        </nav>
+<main>
+    <div class="menu">
+		<button id="grid">⏹️Grid</button>
+		<button id="list">📄List</button>
+	</div>
+
+    <article class="grid">
+        <h2>Member Directory</h2>
+
+        <div id="member-container">
+            
+        </div>
+    </article>
+
+</main>
+
+<footer>
+    <p>WDD231 Class Project</p>
+    <p>Kaye Gualingco</p>
+    <p>&copy; <span id="currentyear"></span> Timbuktu Chamber of Commerce </p>
+    <p id="lastModified"></p>
+</footer>
+
+
+<script>
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = 'Last Modification: ' + document.lastModified;
+</script>
+</body>
+</html>
+

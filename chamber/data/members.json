@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Acme Corporation",
+        "address": "123 Main St, Timbuktu",
+        "phone": "123-456-7890",
+        "website": "https://www.acmecorp.com",
+        "image": "acme-logo.png",
+        "membershipLevel": 1,
+        "info": "Leading provider of innovative solutions."
+    },
+    {
+        "name": "Delta Marketing Co.",
+        "address": "456 Maple St, Timbuktu",
+        "phone": "555-123-4567",
+        "website": "https://www.deltamarketingco.com",
+        "image": "delta-marketing-logo.png",
+        "membershipLevel": 1,
+        "info": "Innovative marketing solutions for modern businesses."
+    },
+    {
+        "name": "Alpha Consulting",
+        "address": "321 Walnut St, Timbuktu",
+        "phone": "555-987-6543",
+        "website": "https://www.alphaconsulting.com",
+        "image": "alpha-consulting-logo.png",
+        "membershipLevel": 3,
+        "info": "Expert consultants in business strategy and development."
+    },
+    {
+        "name": "Sigma Technology Solutions",
+        "address": "975 Oak Dr, Timbuktu",
+        "phone": "555-258-9631",
+        "website": "https://www.sigmatechsolutions.com",
+        "image": "sigma-tech-logo.jpg",
+        "membershipLevel": 1,
+        "info": "Innovative IT solutions for modern businesses."
+    },
+    {
+        "name": "Epsilon Enterprises",
+        "address": "202 Pine St, Timbuktu",
+        "phone": "567-890-1234",
+        "website": "https://www.epsilon.com",
+        "image": "epsilon-logo.svg",
+        "membershipLevel": 2,
+        "info": "Your trusted partner in business."
+    },
+    {
+        "name": "Jollibee Foods Corporation",
+        "address": "Jollibee Plaza, 10 Tindalo St, Barangay San Antonio, Pasig City, Metro Manila, Philippines",
+        "phone": "+63 2 8700 8000",
+        "website": "https://www.jollibee.com.ph",
+        "image": "jollibee-logo.webp",
+        "membershipLevel": 3,
+        "info": "The largest fast-food chain in the Philippines, known for its Chickenjoy."
+    },
+    {
+        "name": "Globe Telecom",
+        "address": "McKinley, Bonifacio Global City, Taguig, Metro Manila, Philippines",
+        "phone": "+63 2 730 1000",
+        "website": "https://www.globe.com.ph",
+        "image": "globe-telecom-logo.png",
+        "membershipLevel": 3,
+        "info": "A leading telecommunications company providing mobile and broadband services."
+    }
+]
