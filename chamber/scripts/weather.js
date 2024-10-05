@@ -7,7 +7,7 @@ const myHigh = document.querySelector('#high');
 const myLow = document.querySelector('#low');
 const weatherDataContainer = document.querySelector('#weather-data');
 
-// API key and coordinates for San Miguel, El Salvador
+
 const myKey = "73f33a35ca9203f921d00ad1a2b4ea2f";
 const myLat = "10.31995";
 const myLong = "123.881978";
