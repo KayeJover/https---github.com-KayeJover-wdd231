@@ -8,16 +8,19 @@
     <meta name="author" content=" Kaye Gualingco ">
 
      <!-- Open Graph meta tags for Facebook -->
-     <meta property="og:title" content="Timbuktu Chamber of Commerce">
+     <meta property="og:title" content="Cebu Chamber of Commerce">
      <meta property="og:type" content="website">
      <meta property="og:image" content="images/social-image.png">
      <meta property="og:url" content="https://yourwebsite.com">
      <meta property="og:description" content="Welcome to Timbuktu Chamber of Commerce, promoting local businesses and commerce.">
     
-     <link rel="stylesheet" href="styles/small-directory.css">
-    <link rel="stylesheet" href="styles/large-directory.css">
+    <link rel="stylesheet" href="styles/small-directory.css">
+    <link rel="stylesheet" href="styles/large-home.css">
+    <link rel="stylesheet" href="styles/small-home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="icon" href="favicon.ico">
-    <script src="scripts/weather.js" defer></script>
+
 </head>
 
 <body>
@@ -26,25 +29,26 @@
         <div class="placeholder">
             <img src="images/logo.png" alt="Logo" height="110" width="95">
             <span>Chamber of Commerce</span>
-            <span class="symbol">◐</span>
+            <span class="symbol" id="darkModeToggle">◐</span> <!-- Symbol to toggle dark mode -->
         </div>
     </header>
         <nav>
-            <button id="myButton"></button>
+            <button id="Button"></button>
             <ul class="menuLinks">
                 <li><a href="index.html" title="Home">Home</a></li>
-                <li><a href="#" title="Directory">Directory</a></li>
+                <li><a href="directory.html" title="Directory">Directory</a></li>
                 <li><a href="join.html" title="Join">Join</a></li>
                 <li><a href="#" title="Discover">Discover</a></li>
             </ul>
         </nav>
-        <img src="images/hero.jpg" alt="Cebu Chamber of Commerce Hero Image" height="450" width="1400">
 
-<main>
-    <a href="join.html">Join the Cebu Chamber of Commerce</a>
-    
+        <div class="hero">
+        <img src="images/hero.jpg" alt="Cebu Chamber of Commerce Hero Image" height="250" width="500">
+        </div>
+<main>    
+    <a href="join.html">Join Now</a>
+
     <h2>Home</h2>
-
     <div id="events">
         <h3>Events</h3>
         <img src="images/placeholder.png" alt="Placeholder" height="110" width="100">
@@ -56,33 +60,54 @@
 
     </div>
 
-    <section class="current">
-    <h3>Current Weather</h3>
     <div id="current-weather">
-        <img id="graphic" src="" alt="Weather Icon">
-        <p id="temperature"></p>
-        <p id="description"></p>
-        <!-- List of events here -->
+        <h3>Current Weather</h3>
+        <img id="graphic" src="https://openweathermap.org/img/w/04n.png" alt="Weather Icon">
+        <div class="weather-info">
+            <p id="temperature"><strong>80</strong>°F</p>
+            <p id="description">Scattered Clouds</p>
+            <p>High: <strong id="high">80°F</strong></p>
+            <p>Low: <strong id="low">80°F</strong></p>
+            <p>Humidity: 71%</p>
+            <p>Sunrise: 5:44am</p>
+            <p>Sunset: 5:45pm</p>
+        </div>
+        
     </div>
-    </section>
 
-    <section class="weather">
+    <div id="weather">
         <h3>Weather Forecast</h3>
         <div id="weather-data">
-           
+            <p>Today: <strong>89°F</strong></p>
+            <p>Wednesday: <strong>89°F</strong></p>
+            <p>Thursday: <strong>88°F</strong></p>
         </div>
-    </section>
+    </div>
 
-    <section class="spotlights">
-        <h3>Company Spotlights</h3>
-        <div id="spotlights">
-            <!-- Company spotlights will be injected here -->
+    <div id="spotlights">
+        <div class="member-data">
+            <div class="business-info">
+                <img src="images/metrotect.jpg" alt="MetroTech Solutions Logo" class="business-logo"></div>
+                <div class="details"></div>
+                   
         </div>
-    </section>
-
+    </div>       
 </main>
 
 <footer>
+    <p>Cebu Chamber of Commerce</p>
+    <p>3rd Floor Cebu Chamber Centre</p>
+    <p>Barangay Tejero, North Reclamation Area, Cebu City 6000</p>
+    <p>info@cebuchamber.org</p>
+    <p>(032) 232 1421</p>
+
+    <div class="footer-icons">
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+    
+    
     <p>WDD231 Class Project</p>
     <p>Kaye Gualingco</p>
     <p>&copy; <span id="currentyear"></span> Timbuktu Chamber of Commerce </p>
@@ -94,6 +119,11 @@
     document.getElementById('currentyear').textContent = new Date().getFullYear();
     document.getElementById('lastModified').textContent = 'Last Modification: ' + document.lastModified;
 </script>
+
+<script src="scripts/weather.js" defer></script>
+
+
+
 </body>
 </html>
 

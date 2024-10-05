@@ -1,0 +1,124 @@
+/* HOME PAGE*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#Button::before {
+    content: "☰";
+}
+
+ul.menuLinks li a{
+    display:block;
+    padding: .75rem 2vw;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+#Button.open::before {
+    content: "✖";
+}
+.hero img{
+    margin-top: 10px;
+	box-shadow: 0 0 5px 5px #333;                                          
+}
+main h2{
+    text-align: left;
+    font-size:35px;
+    margin-top: 20px;
+}
+main a{
+    color:#000;
+    position: absolute;
+    right:10px;
+    
+}
+#events h3,
+#current-weather h3,
+#weather h3
+{
+    margin-top: 20px;
+    text-align: center;
+    color:#ffe27a;
+    background-color: gray;
+    font-size: 30px;
+    font-weight: lighter;
+}
+#events img{
+    margin-top: 10px;
+}
+#events,
+#current-weather,
+#weather{
+    background-color: #D8D2C2;
+    box-shadow: 0 0 5px 5px #333;                                          
+
+}
+#current-weather p {
+    margin-left:150px;
+    bottom:50px;
+    padding:2px;
+}
+#current-weather img{
+    position: absolute;
+    margin-left: 30px;   
+}
+#temperature {
+    font-size: 1.5rem; 
+    color: black;
+}
+#weather-data p{
+    padding:10px;
+    font-size: 20px;
+}
+
+.member-data {
+    box-shadow: 0 0 10px  #333;                                          
+    background-color: #D8D2C2;
+    margin-top: 30px;
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    display: flex; 
+    
+}
+.business-info {
+    display: flex; /* Flexbox for image and details alignment */
+    width: 100%; 
+}
+
+.business-logo {
+    width: 100px; 
+    height: auto; 
+    margin-right: 20px; 
+    margin-top: 20px;
+}
+
+.details {
+    flex: 1;
+}
+
+.business-name {
+    font-size: 1.5em;
+    margin-left: 65px;
+}
+
+.membership-level {
+    font-style: italic; 
+    margin-left:170px;
+}
+
+hr {
+    margin-left: 50px; 
+    margin-top: 10px;
+    border: 1px solid #726767;
+}
+
+.email, .phone, .url {
+    margin-left:50px;
+    margin-top: 10px;
+}
+.url a{
+    margin-right: 170px;
+    color:blue;
+}

@@ -24,6 +24,7 @@ hamburgerElement.addEventListener('click', () => {
 
 });
 
+
 // Function to fetch member data
 async function fetchMembers() {
     try {

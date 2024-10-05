@@ -1,7 +1,10 @@
+
 // Selectors for current weather elements
 const myDescription = document.querySelector('#description');
 const myTemperature = document.querySelector('#temperature');
 const myGraphic = document.querySelector('#graphic');
+const myHigh = document.querySelector('#high');
+const myLow = document.querySelector('#low');
 const weatherDataContainer = document.querySelector('#weather-data');
 
 // API key and coordinates for San Miguel, El Salvador
@@ -27,48 +30,13 @@ async function apiFetch() {
         console.log(error);
     }
 }
-// Weather Forecast
-async function fetchWeather() {
-    try {
-        const response = await fetch(myURL);
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        const data = await response.json(); // Parse the JSON response
-        displayWeather(data); // Display current weather
-        displayForecast(data); // Display the 3-day forecast
-    } catch (error) {
-        console.error("Error fetching weather data:", error);
-    }
-}
-
-function displayForecast(data) {
-    let forecastHTML = '<h4>3-Day Forecast</h4>';
-
-    // Loop through the first three days (0: Today, 1: Tomorrow, 2: Day after tomorrow)
-    for (let i = 0; i < 3; i++) {
-        const forecastDay = data.daily[i]; // Access the daily weather data
-        
-        // Get the correct day label: 'Today' for day 0, then dynamic for other days
-        const dayName = i === 0 
-            ? 'Today' 
-            : new Date(forecastDay.dt * 1000).toLocaleDateString('en-US', { weekday: 'long' });
-
-        // Add the forecast details for the current day
-        forecastHTML += `
-            <p><strong>${dayName}:</strong> ${Math.round(forecastDay.temp.day)}&deg;F</p>
-        `;
-    }
-
-    // Inject the forecast HTML into the weather-data container
-    document.getElementById('weather-data').innerHTML = forecastHTML;
-}
 
 // Function to display the results
 function displayResults(data) {
     myDescription.innerHTML = capitalizeWords(data.weather[0].description);
-    myTemperature.innerHTML = `${Math.round(data.main.temp)}&deg;F`; // Rounded temperature
-    
+    myTemperature.innerHTML = `${Math.round(data.main.temp)}&deg;F`; 
+    myHigh.innerHTML = `${Math.round(data.main.temp_max)}&deg;F`;
+    myLow.innerHTML = `${Math.round(data.main.temp_min)}&deg;F`;
     // Set the weather icon
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     myGraphic.setAttribute('src', iconsrc);
@@ -81,3 +49,78 @@ function capitalizeWords(str) {
 }
 
 apiFetch();
+
+
+// JavaScript code for the spotlights
+const businesses = [
+    {
+        "companyName": "MetroTech Solutions",
+        "logo": "metrotect.jpg",
+        "phone": "(632) 654-3210",
+        "address": "123 Metro Ave, Cebu City, Philippines",
+        "website": "https://metrotech.com",
+        "membershipLevel": "Silver",
+        "email": "support@metrotech.com"
+    },
+    {
+        "companyName": "Aboitiz Power Corporation",
+        "logo": "aboitiz.png",
+        "phone": "(032) 230-8333",
+        "address": "3rd Floor, Aboitiz Corporate Center, M.L. Quezon Avenue, Cebu City, Philippines",
+        "website": "https://aboitizpower.com/",
+        "membershipLevel": "Gold",
+        "email": "customer.service@aboitiz.com"
+    },
+    {
+        "companyName": "Megaworld Corporation",
+        "logo": "megaworld.png",
+        "phone": "(032) 231-6700",
+        "address": "The Mactan Newtown, Lapu-Lapu City, Cebu, Philippines",
+        "website": "https://www.megaworldcorp.com/",
+        "membershipLevel": "Gold",
+        "email": "info@megaworldcorp.com"
+    }
+];
+
+function getRandomBusinesses(businesses, num) {
+    const shuffled = businesses.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, num);
+}
+
+function displaySpotlights(businesses) {
+    const spotlightsDataContainer = document.querySelector('#spotlights'); // Adjust selector to the main container
+    spotlightsDataContainer.innerHTML = ''; // Clear previous data
+
+    businesses.forEach(business => {
+        const content = `
+            <div class="member-data">
+                <div class="business-info">
+                    <div class="business-logo">
+                        <img src="images/${business.logo}" alt="${business.companyName} logo" width="150" height="100">
+                    </div>
+                    <div class="details">
+                        <p class="business-name"><strong>${business.companyName}</strong></p>
+                        <p class="membership-level"><strong>${business.membershipLevel}</strong></p>
+                        <hr>
+                        <p class="email"><strong>Email:</strong> ${business.email}</p>
+                        <p class="phone"><strong>Phone:</strong> ${business.phone}</p>
+                        <p class="url"><strong>URL:</strong> <a href="${business.website}" target="_blank">Visit Website</a></p>
+                    </div>
+                </div>
+            </div>
+        `;
+        spotlightsDataContainer.innerHTML += content; // Append content to the container
+    });
+}
+
+const selectedBusinesses = getRandomBusinesses(businesses, 3); 
+displaySpotlights(selectedBusinesses);
+
+const hamburgerElement = document.querySelector('#Button');
+const navElement = document.querySelector('.menuLinks');
+
+hamburgerElement.addEventListener('click', () => {
+    navElement.classList.toggle('open');
+    hamburgerElement.classList.toggle('open');
+
+});

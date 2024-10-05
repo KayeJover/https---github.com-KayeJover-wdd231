@@ -5,55 +5,49 @@
 }
 header {
     position: relative;
-    background-color: gray;
+    background-color: #798645;
     height:100px;
 }
 header img{
     height:100px;
 }
+
 h1{
     position: absolute;
     top: 20px;
     left: 110px;
+    color:#ffe27a;
+}
+h2{
+    text-align: center;
+    color:#798645;
 }
 .placeholder span{
     position: absolute;
-    bottom:15px;
+    bottom:25px;
     left:110px; 
+
 }
 .symbol {
     position: absolute;
-    margin-left:250px;
-    bottom:150px;
-    font-size: 4rem;
+    margin-left:280px;
+    top:20px;
+    font-size: 3rem;
 }
 
 /* Navigation*/
 nav{
-    background-color: darkcyan;
+    background-color: #C1CFA1;
 }
 #myButton::before {
     content: "☰";
-}
-
-#myButton {
-    position: absolute;
-    bottom:510px;
-    font-size: 3rem;
-    background: none;
-    border: none;
-    color: #000;
-    cursor:pointer;
-    width:100%;
-    text-align: right;
-    padding: .25rem 2vw;
-    
 }
 
 ul.menuLinks li a{
     display:block;
     padding: .75rem 2vw;
     color: black;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -68,7 +62,7 @@ ul.menuLinks {
 }
 ul.menuLinks a:hover {
     text-decoration: underline;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 #myButton.open::before {
@@ -164,23 +158,45 @@ main {
     height: auto; 
 }
 
-h2 {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-}
 
 footer{
-    background-color: gray;
+    background-color: #798645;
 	padding: 20px;
     margin-top: 10px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
-    color: black;
+    color: white;
     font-weight: 100;
     font-size: 100%;
 
 }
+.footer-icons {
+    text-align: right;        
+    padding-right: 140px;         
+}
+.footer-icons a {
+    display: inline-block; /* Make the anchor a block for styling */
+    width: 50px;                    
+    height: 50px;                  
+    border-radius: 50%;             
+    background-color: white;                   
+    text-align: center;          
+    line-height: 50px; /* Vertically center the icon by matching the height */
+    font-size: 24px;    
+    margin-left: 20px;                     
+    transition: background-color 0.3s ease;  
+}
+
+.footer-icons a:hover {
+    background-color: black;      
+}
+
+.footer-icons a .fa-youtube { color: #FF0000; }   /* Red for YouTube */
+.footer-icons a .fa-twitter { color: #1DA1F2; }   /* Blue for Twitter */
+.footer-icons a .fa-linkedin { color: #0077B5; }  /* Blue for LinkedIn */
+
 #lastModified {
-    color: #00005d;
+    color: whhite;
      
 }
+
+

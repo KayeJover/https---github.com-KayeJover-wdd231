@@ -7,6 +7,7 @@
     #myButton {
         display:none;
     }
+    
     ul.menuLinks, ul.menuLinks.open {
         display:flex;
         justify-content:right;
@@ -17,7 +18,7 @@
     }
     header {
         position: relative;
-        background-color: gray;
+        background-color: #798645;
         height:100px;
     }
     header img{
@@ -32,7 +33,7 @@
     }
     .placeholder span{
         position: absolute;
-        bottom:15px;
+        bottom:25px;
         left:190px; 
     }
     .symbol {
@@ -92,4 +93,5 @@
     
     }
     
+
 }

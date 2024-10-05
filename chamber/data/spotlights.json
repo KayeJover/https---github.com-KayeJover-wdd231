@@ -1,34 +1,30 @@
 [
     {
-        "companyName": "ABC Tech",
-        "logo": "https://example.com/logo1.png",
-        "phone": "(632) 123-4567",
-        "address": "123 Tech St, Cebu City, Philippines",
-        "website": "https://abctech.com",
-        "membershipLevel": "Gold"
+        "companyName": "MetroTech Solutions",
+        "logo": "metrotech.jpg",
+        "phone": "(632) 654-3210",
+        "address": "123 Metro Ave, Cebu City, Philippines",
+        "website": "https://metrotech.com",
+        "membershipLevel": "Silver",
+        "email": "support@metrotech.com"
     },
     {
-        "companyName": "XYZ Innovations",
-        "logo": "https://example.com/logo2.png",
-        "phone": "(632) 765-4321",
-        "address": "456 Innovation Ave, Cebu City, Philippines",
-        "website": "https://xyzinnovations.com",
-        "membershipLevel": "Silver"
+        "companyName": "Aboitiz Power Corporation",
+        "logo": "aboitiz.png",
+        "phone": "(032) 230-8333",
+        "address": "3rd Floor, Aboitiz Corporate Center, M.L. Quezon Avenue, Cebu City, Philippines",
+        "website": "https://aboitizpower.com/",
+        "membershipLevel": "Gold",
+        "email": "customer.service@aboitiz.com"
+
     },
     {
-        "companyName": "Cebu Design Studio",
-        "logo": "https://example.com/logo3.png",
-        "phone": "(632) 456-7890",
-        "address": "789 Creative Blvd, Cebu City, Philippines",
-        "website": "https://cebudesignstudio.com",
-        "membershipLevel": "Gold"
-    },
-    {
-        "companyName": "Global Solutions",
-        "logo": "https://example.com/logo4.png",
-        "phone": "(632) 321-6543",
-        "address": "321 Global St, Cebu City, Philippines",
-        "website": "https://globalsolutions.com",
-        "membershipLevel": "Silver"
+        "companyName": "Megaworld Corporation",
+        "logo": "megaworld.png",
+        "phone": "(032) 231-6700",
+        "address": " The Mactan Newtown, Lapu-Lapu City, Cebu, Philippines",
+        "website": "https://www.megaworldcorp.com/",
+        "membershipLevel": "Gold",
+        "email": "info@megaworldcorp.com"
     }
 ]
