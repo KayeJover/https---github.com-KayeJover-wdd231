@@ -33,7 +33,7 @@
     h1{
         position: absolute;
         top: 20px;
-        left: 190px;
+        left: 90px;
     }
     .placeholder span{
         position: absolute;
@@ -49,7 +49,7 @@
         margin-top: 10px;
         box-shadow: 0 0 5px 5px #333;  
         width:100%;       
-        height:500px;                                 
+        height:400px;                                 
     }
     main h2{
         margin-right:90%;
@@ -65,7 +65,7 @@
     #current-weather{
         position: absolute;
         margin-left: 55%;
-        top:720px;
+        top:620px;
         width:20%;
     }
     #current-weather h3,
@@ -83,7 +83,7 @@
     #weather{
         position: absolute;
         margin-left: 78%;
-        top:720px;
+        top:620px;
         width: 20%;
     }
     #weather-data{
@@ -152,5 +152,57 @@
     #lastModified {
         color: #151515;
          
+    }
+
+    /* JOIN CSS*/
+    .register h2{
+        margin:10px;
+        text-align: left;
+        color:#798645;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+    }
+    .membership-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 750px;
+        height:600px;
+        margin-left:400px;
+        margin-top: -750px;
+        animation: slideUp 2s ease forwards; 
+        transition: opacity 0.5s ease-in-out;
+        
+    }
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(100px); /* Start below */
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0); /* Move to original position */
+        }
+    }
+   
+    h3{
+        font-size: 25px;
+        position: absolute;
+        right:600px;
+        top:150px;
+        text-align: left;
+        color:#798645;
+    }
+    .card {
+        background-color: #798645;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
     }
 }
