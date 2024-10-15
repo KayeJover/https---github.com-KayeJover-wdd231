@@ -1,0 +1,120 @@
+
+:root {
+    --secondary-color:  #cf5c5c; 
+    --primary-color:  #33372C; 
+    --background-color:  #1E3E62; 
+    
+
+    --heading-font: "Kalam", serif;
+    --paragraph-font: "Merriweather", serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--paragraph-font);
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+}
+header {
+    background-color: var(--background-color);
+    margin:0 auto;
+    text-align: center;
+    font-family: var(--heading-font);
+}
+h1{
+    font-size: 300%;
+    color: #888888;
+}
+h2{
+    color: var(--secondary-color);
+    margin: 10px;
+    padding:10px;
+    font-family: var(--heading-font);
+    font-size: 200%;
+
+}
+p{
+    margin-left:50px;
+    padding:10px;
+    font-size:large ;
+    color:white;
+}
+#color-schema {
+    margin: 0 auto ;
+    padding: 1rem 1rem 1rem 0rem;
+    text-align: center;
+    list-style-type: none;
+    background-color: var(--background-color);
+    width: 70%;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px rgb(147, 147, 147);
+    color: var(--primary-color);
+
+}
+#typography{
+    margin: 0 auto ;
+    padding: 1rem 1rem 1rem 0rem;
+    text-align: center;
+    list-style-type: none;
+    background-color: var(--background-color);
+    width: 70%;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px rgb(147, 147, 147);
+    color: var(--primary-color);
+
+}
+#typo1{
+    font-size: 200%;
+}
+#typo2{
+    font-size: 150%;
+}
+#desktop{
+    color:var(--background-color);
+    padding:20px;
+    margin-left:300px; 
+}
+#mobile{
+    position: absolute;
+    color:var(--background-color);
+    margin-left: 900px;
+    padding:20px;
+}
+#wireframe-mobile{
+    position: absolute;
+    margin-left: 900px;
+    margin-top: 90px;
+    width:20%;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px rgb(147, 147, 147);
+}
+#wireframe-desktop{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 150px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px rgb(147, 147, 147);
+    width:650px;
+}
+
+footer{
+    background-color: var(--background-color);
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+    color:rgb(35 35 35);
+    font-weight: 100;
+    font-size: 100%;
+    margin-top: 700px;
+
+}
+#lastModified {
+    position: absolute;
+    margin-top: 70px;
+    color:#a8a8a8;
+     
+}
