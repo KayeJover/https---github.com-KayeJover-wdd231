@@ -272,4 +272,66 @@ footer{
     font-size: 100%;
 
 }
+/* DISCOVER PAGE*/
+.sidebar {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column initially */
+    grid-gap: 20px; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .sidebar h3{
+        margin-left:500px;
+        font-size: 2rem;
+
+    }
+    #visitor-message{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top:50px;
+        
+    }
+.sidebar-section {
+    padding: 15px;
+    background-color: gray;
+    margin-left:50px;
+    width:600px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px 5px #333;          
+  }
+  .sidebar-section ul {
+    list-style: none;
+    padding-top: 50px;
+    
+  }
+  .sidebar-section table th, .sidebar-section table td {
+    padding-top: 40px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  .main-content {
+    position: absolute;
+    background-color: #C1CFA1;
+    width:480px;
+    top:280px;
+    left:750px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .main-content h2{
+    font-size: 30px;
+    width:600px;
+    color: yellow;
+
+  }
+  .gallery img{
+    box-shadow: 0 0 5px 5px #333;          
+    margin:20px;
+    margin-top: 20px;
+    height:200px;
+
+  }
+  .hover:hover {box-shadow: 0 0 50px #333;}
 }
