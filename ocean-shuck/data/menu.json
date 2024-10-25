@@ -1,0 +1,117 @@
+{
+    "menu": [
+      {
+        "category": "Seafood Boils",
+        "items": [
+          {
+            "name": "Classic Shrimp Boil",
+            "description": "A generous portion of plump shrimp, corn, and potatoes, tossed in our signature Cajun butter sauce.",
+            "price": "850",
+            "image": "shrimpboil.jpg"
+          },
+          {
+            "name": "Crab Feast",
+            "description": "Succulent crab legs served with corn, potatoes, and sausage, seasoned to perfection.",
+            "price": "1,200",
+            "image": "crabfeast.jpg"
+          }
+        ]
+      },
+      {
+        "category": "Appetizers",
+        "items": [
+          {
+            "name": "Calamari",
+            "description": "Crispy fried squid rings served with a side of marinara sauce.",
+            "price": "300",
+            "image": "calamari.jpg"
+
+          },
+          {
+            "name": "Garlic Butter Mussels",
+            "description": "Steamed mussels cooked in garlic butter and served with toasted bread.",
+            "price": "350",
+            "image": "garlicbuttermussels.jpg"
+
+          }
+        ]
+      },
+      {
+        "category": "Main Dishes",
+        "items": [
+          {
+            "name": "Grilled Salmon",
+            "description": "Freshly grilled salmon fillet served with a side of mashed potatoes and seasonal vegetables.",
+            "price": "700",
+            "image": "grilledsalmon.webp"
+
+          },
+          {
+            "name": "Lobster Thermidor",
+            "description": "A rich and creamy lobster dish topped with cheese, served with rice and garlic butter sauce.",
+            "price": "1,800",
+            "image": "lobster.jpg"
+
+          }
+        ]
+      },
+      {
+        "category": "Sides",
+        "items": [
+          {
+            "name": "Corn on the Cob",
+            "description": "Sweet and buttery corn on the cob, perfect with any seafood dish.",
+            "price": "100",
+            "image": "corn.jpg"
+
+          },
+          {
+            "name": "French Fries",
+            "description": "Crispy golden fries, perfect for dipping in our signature sauces.",
+            "price": "150",
+            "image": "fries.jpg"
+
+          }
+        ]
+      },
+      {
+        "category": "Beverages",
+        "items": [
+          {
+            "name": "Iced Tea",
+            "description": "Refreshing iced tea brewed with a hint of lemon.",
+            "price": "80",
+            "image": "icetea.jpg"
+
+          },
+          {
+            "name": "Soda",
+            "description": "Your choice of Coke, Sprite, or Royal.",
+            "price": "60",
+            "image": "soda.png"
+
+          }
+        ]
+      },
+      {
+        "category": "Desserts",
+        "items": [
+          {
+            "name": "Leche Flan",
+            "description": "Smooth and creamy caramel custard, a Filipino favorite.",
+            "price": "120",
+            "image": "lecheplan.JPG"
+
+          },
+          {
+            "name": "Halo-Halo",
+            "description": "A refreshing mix of shaved ice, sweetened beans, fruits, and leche flan, topped with ube ice cream.",
+            "price": "150",
+            "image": "halohalo.jpg"
+
+          }
+        ]
+      }
+    ]
+  }
+  

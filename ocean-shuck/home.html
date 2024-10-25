@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | WDD 231 | Website Project </title>
+    <meta name="description" content="Ocean Shuck Site Plan">
+    <meta name="author" content=" Kaye Gualingco ">
+
+     <!-- Open Graph meta tags for Facebook -->
+     <meta property="og:title" content="Ocean Shuck">
+     <meta property="og:type" content="website">
+     <meta property="og:image" content="images/social-image.png">
+     <meta property="og:url" content="https://yourwebsite.com">
+     <meta property="og:description" content="Ocean Shuck is a popular seafood boil located in Bacolod, Philippines, known for serving fresh and flavorful seafood dishes.">
+    
+    <link rel="stylesheet" href="styles/home-small.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <header>
+        <h1>Ocean Shuck</h1>
+        <div class="logo">
+            <img src="images/ocean-shuck(2).jpg" alt="Logo" loading="lazy" height="110" width="95">
+        </div>
+    </header>
+
+        <nav>
+            <button id="Button"></button>
+            <ul class="menuLinks">
+                <li><a href="home.html" title="Home">Home</a></li>
+                <li><a href="menu.html" title="Menu">Menu</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+<main>    
+    <div id="home">
+    <h2>Welcome to Ocean Shuck: The Home of Seafood Boil in Bacolod!</h2>
+    <img src="images/home.jpg" alt="Home" loading="lazy" height="480" width="480">
+       <p>At Ocean Shuck, we bring the ocean’s freshest flavors right to your table. Located in the heart of Bacolod, our seafood boil is famous for its mouthwatering combination of juicy shrimp, tender crabs, and flavorful mussels, all tossed in our signature blend of spices and sauces. Whether you're a seafood lover or just looking to enjoy a meal with friends and family, Ocean Shuck is the perfect place to dive into a delicious dining experience.</p>
+        <p>Explore our menu, discover daily specials, and get ready to savor the best seafood in town!</p>
+        
+
+    </div>
+
+    <div id="about-us">
+        <h3>About Us</h3>
+        <img src="images/about-us.jpg" alt="About-Us" loading="lazy" height="480" width="480">
+       <p>Ocean Shuck was born out of a love for fresh, flavorful seafood and a desire to bring a unique dining experience to Bacolod. We specialize in seafood boils, where we combine the freshest catch with our signature spices and sauces, creating a feast that’s perfect for sharing with friends and family.</p>
+       <p>Our goal is to provide a dining experience that not only celebrates the bounty of the ocean but also the joy of gathering around a table with loved ones.</p>
+       <p class="underline-text">At Ocean Shuck, every dish is made with care, using the best ingredients to ensure that each bite is packed with flavor. We are committed to delivering top-notch service and a memorable dining experience that keeps our customers coming back.</p>
+        <div id="mission">
+            <h4>Mission</h4>
+            <p>To bring the freshest and most flavorful seafood experience to Bacolod, while creating a warm and welcoming atmosphere where people can enjoy great food and make lasting memories with family and friends.</p>
+        </div>
+        <div id="vision">
+            <h4>Vision</h4>
+            <p>To be the leading seafood dining destination in Bacolod, known for our exceptional seafood boils, excellent customer service, and our commitment to sustainability and community.            </p>
+        </div>
+        
+    </div>
+</main>
+
+<footer>
+    <div class="footer-text-left">
+    <p>Ocean Shuck</p>
+    <p>1st Floor Ocean Shuck Restaurant</p>
+    <p>Ramos corner, Bacolod, 6100 Negros Occidental</p>
+    <p>info@oceanshuck.org</p>
+    <p>(032) 232 1421</p>
+    </div>
+
+    <div class="footer-icons">
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+    
+    <div class="footer-text-right">
+    <p>WDD231 Website Project</p>
+    <p>Kaye Gualingco</p>
+    <p>&copy; <span id="currentyear"></span> Ocean Shuck </p>
+    <p id="lastModified"></p>
+    </div>
+</footer>
+
+
+<script>
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = 'Last Modification: ' + document.lastModified;
+</script>
+
+<script src="scripts/ocean-shuck.js" defer></script>
+
+
+
+</body>
+</html>
+

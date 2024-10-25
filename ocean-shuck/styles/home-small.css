@@ -1,0 +1,336 @@
+:root {
+
+    --heading-font: "Kalam", serif;
+    --paragraph-font: "Merriweather", serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header {
+    position: relative;
+    background-color: black;
+    font-family: var(--heading-font);
+    height:100px;
+}
+header img{
+    height:90px;
+    margin-top: 5px;
+
+}
+
+h1{
+    position: absolute;
+    top: 20px;
+    margin-left: 100px;
+    color:white;
+}
+/* Navigation*/
+nav{
+    background-color:#cf5c5c ;
+}
+#Button::before {
+    content: "☰";
+}
+#Button {
+    position: absolute;
+    bottom:495px;
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor:pointer;
+    width:100%;
+    text-align: right;
+    padding: .25rem 2vw;
+
+    
+}
+nav ul li a {
+    color: #333; 
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a.active {
+    color: black; 
+    background-color:gray;
+    border-radius: 5px; 
+}
+
+
+ul.menuLinks li a{
+    display:block;
+    padding: .75rem 2vw;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+li.current-menu-item a {
+    background-color:rgba(0,0,0,0.2);
+    
+}
+ul.menuLinks {
+    display: none;
+    list-style-type: none;
+    
+}
+ul.menuLinks a:hover {
+    color: black;
+
+}
+
+#Button.open::before {
+    content: "✖";
+}
+ul.open.menuLinks {
+    display:block;
+}
+ 
+/* MAIN */
+main{
+    background-color: black;
+    margin-top: 20px;
+}
+#home h2{
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 8%;
+    color:white;
+    text-align: center;
+    width:80%;
+    font-size: 30px;
+    font-family: var(--heading-font);
+
+}
+#home p,
+#about-us p{
+    color:#1DA1F2;
+    font-size:20px;
+    margin:30px;
+    text-align: center;
+}
+#about-us h3{
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 40%;
+    color:white;
+    font-size: 50px;
+    font-family: var(--heading-font);
+
+
+}
+#mission h4,
+#vision h4{
+    color:#cf5c5c;
+    text-align: center;
+    font-size: 30px;
+}
+.underline-text {
+    border-bottom: 2px solid gray; 
+    padding-bottom: 50px; 
+    display: inline-block; /* Ensures the underline does not span the entire width */
+  }
+
+  footer{
+    background-color: black;
+	padding: 20px;
+    margin-top: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+    color: gray;
+    font-weight: 100;
+    font-size: 100%;
+
+}
+.footer-icons {
+    text-align: right;        
+    padding-right: 140px;         
+}
+.footer-icons a {
+    display: inline-block; /* Make the anchor a block for styling */
+    width: 50px;                    
+    height: 50px;                  
+    border-radius: 50%;             
+    background-color: white;                   
+    text-align: center;          
+    line-height: 50px; /* Vertically center the icon by matching the height */
+    font-size: 24px;    
+    margin-left: 20px;                 
+}
+.footer-text-right{
+    margin-top: 20px;
+}
+.footer-icons a:hover {
+    background-color:gray;      
+}
+
+.footer-icons a .fa-youtube { color: #FF0000; }   /* Red for YouTube */
+.footer-icons a .fa-twitter { color: #1DA1F2; }   /* Blue for Twitter */
+.footer-icons a .fa-linkedin { color: #0077B5; }  /* Blue for LinkedIn */
+
+/* MENU */
+#menu h2{
+    position: absolute;
+    color:white;
+    font-family: var(--heading-font);
+    font-size: 70px;
+    margin-top: 70px;
+    margin-left:100px;
+}
+/* Menu card styling in grid view */
+.menu {
+	margin: 1rem auto;
+	padding: 0.5rem;
+	background-color:#00182c;
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+.menu-category {
+    background-color:#cf5c5c;
+    border: 2px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu-item {
+    margin-top: 15px;
+    transition: transform 0.2s;
+}
+
+.menu-item img {
+    border-radius: 10px;
+    width: 90%;
+    max-height: 200px;
+    object-fit: cover;
+    box-shadow: 0 0 20px #333; 
+    margin-top: 10px;  
+    transition: transform 0.2s ease-in-out; 
+}
+.menu-item img:hover {
+    transform: scale(1.05); 
+}
+.menu-item h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #333;
+    font-family: var(--heading-font);
+
+}
+.menu-item .price {
+    color: #00182c;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* List view styles */
+.list-view {
+    display: block;
+}
+
+.menu-item.list-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 50px solid #ddd;
+    padding: 10px 0;
+}
+
+.list .menu-item img {
+    width: 50%;
+    max-height: 200px;
+}
+.menu-item.list-item div {
+    flex: 1;
+}
+
+.menu-item.list-item h4 {
+    font-size: 1.2rem;
+}
+
+.menu-item.list-item .price {
+    font-size: 1rem;
+    color: #0275d8;
+    font-weight: bold;
+}
+
+/* CONTACT*/
+#contact h2{
+    position: absolute;
+    color:white;
+    font-family: var(--heading-font);
+    font-size: 29px;
+    margin-left:160px;
+    margin-top: 50px;
+}
+#contact p{
+    position: absolute;
+    color:white;
+    font-size: 20px;
+    margin-top: 100px;
+    margin-left: 160px;
+}
+#visit h3{
+    position: absolute;
+    color:white;
+    font-family: var(--heading-font);
+    font-size: 29px;
+    bottom:200px;
+    left:160px;
+}
+#address{
+    position: absolute;
+    color:white;
+    font-size: 20px;
+    top: 370px;
+    left: 160px;
+}
+#email1{
+    position: absolute;
+    color:white;
+    font-size: 20px;
+    top: 420px;
+    left: 160px;
+}
+#phone{
+    position: absolute;
+    color:white;
+    font-size: 20px;
+    top: 450px;
+    left: 160px;
+}
+
+.info{
+    position: absolute;
+    margin-left: 160px;
+    bottom:-350px ;
+}
+.info label{
+    font-size: larger;
+    color:white;}
+.info input{
+    width:300px;
+    height:40px;
+}
+.fill-blank {
+    border-left: 8px solid #000; 
+    width: 300px; 
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    color:black; 
+    outline: none;
+}
+.info input[type="submit"]{
+    border:none;
+    border-radius: 6px;
+    background-color:black ;
+    color:white;
+    width:300px;
+    font-size: 20px;
+}   

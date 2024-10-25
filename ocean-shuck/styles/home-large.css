@@ -1,0 +1,140 @@
+@media only screen and (min-width: 38rem) {
+    :root {
+        --heading-font: "Kalam", serif;
+        --paragraph-font: "Merriweather", serif;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #Button {
+        display:none;
+    }
+    #Button{
+        display:none;
+    }
+    ul.menuLinks, ul.menuLinks.open {
+        display:flex;
+        justify-content:right;
+        margin-right:50px;
+    }
+    header img{
+        height:90px;
+        width:130px;
+        margin-top: 5px;
+        margin-left: 30px ;
+    }
+    h1{
+        position: absolute;
+        top: 20px;
+        left: 90px;
+        font-size: 40px;
+    }
+    /* MAIN */
+    #home h2{
+        position: absolute;
+        margin-left: 8%;
+        margin-top: 12%;
+        font-size: 40px;
+    }
+    #about-us h3{
+        position: absolute;
+        margin-left: 40%;
+        margin-top: 9%;
+        font-size: 60px;
+    }
+    #home img,
+    #about-us img{
+        margin:0;
+        width:100%;
+    }
+    #mission p,
+    #vision p{
+        width:70%;
+        margin-left:15%;
+    }
+
+    /* MENU*/
+    .menu-item img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+
+    }
+    .list .menu-item img {
+        width: 50%;
+        height: 450px;
+
+    }
+    #menu h2{
+        font-size: 120px;
+        margin-left: 400px;
+    }
+    #menu img{
+        width:100%;
+    }
+    footer{
+        background-color: black;
+        margin-top: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        color: gray;
+        font-weight: 100;
+        font-size: 110%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between; /* Space between elements */
+        align-items: center; /* Align items vertically */
+    }
+    /*CONTACT*/
+    #contact img{
+        width:100%;
+    }
+    #contact h2{
+        font-size: 50px;
+        margin-left:35%;
+        margin-top: 50px;
+    }
+    #visit h3{
+        font-size: 50px;
+        bottom:200px;
+        left:35%;
+    }
+    #contact p{
+        margin-top: 120px;
+        margin-left: 35%;
+    }
+    #address{
+        top: 410px;
+        left: 35%;
+    }
+    #email1{
+        position: absolute;
+        color:white;
+        font-size: 20px;
+        top: 440px;
+        left: 35%;
+    }
+    #phone{
+        position: absolute;
+        color:white;
+        font-size: 20px;
+        top: 470px;
+        left: 35%;
+    }
+    .info{
+        margin-left: 35%;
+
+    }
+   
+    .info input{
+        width:550px;
+        height:50px;
+    }
+    .fill-blank {
+        width: 550px; 
+    }
+    .info input[type="submit"]{
+        width:550px;
+    }   
+}
