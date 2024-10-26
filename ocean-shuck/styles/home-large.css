@@ -56,15 +56,13 @@
     }
 
     /* MENU*/
-    .menu-item img {
-        width: 200px;
-        height: 150px;
-        object-fit: cover;
-
+    .menu-item img{
+        max-width:120%;
+        height:40%;
     }
-    .list .menu-item img {
-        width: 50%;
-        height: 450px;
+    .list-item img {
+        width: 80%;
+        height: 650px;
 
     }
     #menu h2{
@@ -73,6 +71,18 @@
     }
     #menu img{
         width:100%;
+    }
+    .menu-item {
+        padding-bottom:50px;
+    }
+    .learn-more {
+        position: absolute;
+        margin-top: 220px;
+        right:600px;
+        width:100px;
+    }
+    .modal {
+        right: 150px;
     }
     footer{
         background-color: black;
@@ -86,6 +96,7 @@
         justify-content: space-between; /* Space between elements */
         align-items: center; /* Align items vertically */
     }
+
     /*CONTACT*/
     #contact img{
         width:100%;
